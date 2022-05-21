@@ -1,3 +1,4 @@
+import { inspect } from "../decorators/inspect.js";
 import { logarTempoDeExecução } from "../decorators/logar-tempo-de-execucao.js";
 
 export abstract class View<T> {
@@ -17,6 +18,7 @@ export abstract class View<T> {
         }
     }
 
+    @inspect()
     @logarTempoDeExecução(true)
     /*
         sr for true, vai passar em milisegundos, se for false. Vai ser em segundos.
