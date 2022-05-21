@@ -18,6 +18,9 @@ export abstract class View<T> {
     }
 
     @logarTempoDeExecução(true)
+    /*
+        sr for true, vai passar em milisegundos, se for false. Vai ser em segundos.
+    */
     public update(model: T): void {
         let template = this.template(model);
         if (this.escapar) {
