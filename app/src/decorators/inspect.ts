@@ -1,5 +1,5 @@
-export function inspect(){
-    return function(
+
+    export function inspect(
         target: any,
         propertyKey: string,
         descriptor: PropertyDescriptor
@@ -14,4 +14,3 @@ export function inspect(){
         }
         return descriptor;
     }
-}
