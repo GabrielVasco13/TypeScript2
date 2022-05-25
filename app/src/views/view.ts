@@ -14,13 +14,11 @@ export abstract class View<T> {
         }
     }
 
-    @logarTempoDeExecução(true)
-    @inspect
     /* 
         se for true, vai passar em milisegundos, se for false. Vai ser em segundos.
     */
     public update(model: T): void {
-        let template = this.template(model);
+        let template = this.template(model);  
         this.elemento.innerHTML = template;
     }
 
