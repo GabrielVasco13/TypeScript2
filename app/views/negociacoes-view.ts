@@ -3,8 +3,8 @@ import { Negociacoes } from "../dist/js/models/negociacoes.js";
 
 export class NegociacoesView {
 
-    private elemento: HTMLElement;
 
+    private elemento: HTMLElement;
     constructor(seletor: string) {
         this.elemento = document.querySelector(seletor);
     }
