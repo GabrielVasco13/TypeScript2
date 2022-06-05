@@ -1,13 +1,12 @@
 
 import { Imprivivel } from "../utils/imprimivel.js";
 
-export class Negociacao extends Imprivivel{
+export class Negociacao implements Imprivivel{
     constructor(
         private _data: Date, 
         public readonly quantidade: number, 
         public readonly valor: number
     ) {
-        super();
     }
    
     public static criaDe(dataString: string, quantidadeString: string, valorString: string): Negociacao {
