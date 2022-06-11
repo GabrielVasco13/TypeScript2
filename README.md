@@ -1,2 +1,2 @@
-# TypeScript2
-Formulando o código anteriormente. Tornando ele mais versátil.
+# TypeScript again
+improving knowledge of TypeScript
